@@ -1,4 +1,7 @@
 <p class= "NewUsers-title">Sign-in!</p>
+<h3 class= "NewUsers-SigninPrompt ">
+  or, <%= link_to "sign-up here", new_user_path %>
+</h3>
 
 <section class="UsersNew">
     <%= form_with url: sessions_path do |form| %>

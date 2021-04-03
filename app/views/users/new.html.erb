@@ -1,5 +1,7 @@
 <p class= "NewUsers-title">Please sign-up to start ordering form Cafe Euphoria!</p>
-
+<h3 class= "NewUsers-SigninPrompt ">
+            or, <%= link_to "sign-in here", new_sessions_path %>
+</h3>
 <section class="UsersNew">
     <%= form_with url: users_path do |form| %>
         <div class="Form-section" >
@@ -25,5 +27,6 @@
         <div class="Form-section">
             <%= form.submit value = "Sign-Up", class: "Form-submit" %>
         </div>
+        
     <% end %>
 </section>

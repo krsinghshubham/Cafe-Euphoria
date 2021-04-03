@@ -5,7 +5,7 @@ body {
     margin-top: 40px;
   }
 .NewUsers-title {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 30px;
 }
 
@@ -31,4 +31,10 @@ body {
     border-radius: 4px;
     border: 0;
     margin-left: 155px;
+}
+.NewUsers-SigninPrompt{
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-left: 5px;
 }

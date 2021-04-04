@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :users
 
   resources :menus
+  resources :admins
+
 
   get "/signin" => "sessions#new", as: :new_sessions
   post "/signin" => "sessions#create", as: :sessions

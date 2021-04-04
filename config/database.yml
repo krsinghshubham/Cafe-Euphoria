@@ -6,7 +6,7 @@ default: &default
 development:
   <<: *default
   host: localhost
-  user: postgres
+  user: shubsingh
   password: changeme
   database: cafe_euphoria_db
 

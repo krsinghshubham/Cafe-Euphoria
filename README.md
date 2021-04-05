@@ -9,8 +9,8 @@ Features:
   All other standard security features have been considered.
 
   Only Admins are allowed to change menu of cafe and process the orders,
-  TO acheive this functionality users sign with special characters are not allowed and proper error messages will be displayed.
-  
+  To acheive this functionality users sign with special characters are not allowed and proper error messages will be displayed.
+
   ADMIN-CREDENTIALS :
     Email: admin@cafe-euphoria.com
     Password: adminpassword

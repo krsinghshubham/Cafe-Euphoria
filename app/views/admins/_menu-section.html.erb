@@ -1,4 +1,3 @@
-
 <section class="MenuSection">
     <div class=MenuSectionTitle>
         <p class="MenuSectionTitle-text"><%= section_title %></h2>
@@ -9,6 +8,11 @@
                 <label class="MenuItem-container">
                     <%= menu.name %>
                     <p class="MenuItem-price">₹</p><%= menu.price %><p>
+                    <a class="MenuItem-delete" href="javascript:void(0)">
+                        <%= form_with(url: "/admins/#{menu.id}", method: "Delete") do %>
+                            <input type="image" class="MenuItem-delete-img" src="delete.gif">
+                        <% end %>
+                    </a>
                 </label>
             </li>
         <% end %>

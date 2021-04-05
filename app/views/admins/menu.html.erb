@@ -5,4 +5,36 @@
 </h3>
 
 
-<br> This is menus modification page for admins </br>
+<main class="MenuPageMain">
+    <article>
+        <br></br>
+        <%= form_with(url: "/admins", method: "POST", class: "AddMenu") do %>
+
+             <select class="AddMenu-text" name="category">
+                <option value="" disabled selected>Cateogry ?</option>
+                <option value="Starter">Starter</option>
+                <option value="Main-course">Main-course</option>
+                <option value="Beverages">Beverages</option>
+             </select>
+
+            <input class="AddMenu-text" type="text" , size="11" placeholder="Item name ?" name="name">
+            <input class="AddMenu-text" type="text" , size="11" placeholder="Item price ?" name="price">
+            <input class="AddMenu-button" type="submit" value="Add">
+        <% end %>
+            <%= render partial: "menu-section", locals: {
+                    section_title: "Starter",
+                    menus: Menu.is_starter
+                }
+            %>
+            <%= render partial: "menu-section", locals: {
+                    section_title: "Main-course",
+                    menus: Menu.is_mainCourse
+                }
+            %>
+             <%= render partial: "menu-section", locals: {
+                    section_title: "Beverages",
+                    menus: Menu.is_beverage
+                }
+            %>
+    </article>
+</main>

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :menus
   resources :admins
-  get "/cmenus_page" => "admins#menusEdit", as: :menusEdit
+  get "/menus_page" => "admins#menusEdit", as: :menusEdit
 
 
   get "/signin" => "sessions#new", as: :new_sessions

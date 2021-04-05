@@ -1,3 +1,21 @@
-<ul>
-  <p>this is menus page </p>
-</ul>
+<h1 class="MenuPage-encouragement">Here is our euphoric menu ! </h1>
+<main class="MenuPageMain">
+    <article>
+        <br></br>
+            <%= render partial: "menu-section", locals: {
+                    section_title: "Starters",
+                    menus: Menu.is_starter
+                }
+            %>
+            <%= render partial: "menu-section", locals: {
+                    section_title: "Main-course",
+                    menus: Menu.is_mainCourse
+                }
+            %>
+             <%= render partial: "menu-section", locals: {
+                    section_title: "Beverages",
+                    menus: Menu.is_beverage
+                }
+            %>
+    </article>
+</main>

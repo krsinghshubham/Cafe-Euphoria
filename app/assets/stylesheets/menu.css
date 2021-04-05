@@ -1,0 +1,130 @@
+body {
+  font-family: Open Sans, sans-serif;
+  max-width: 460px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.MenuPage-title {
+  font-size: 20px;
+  color: #453C52;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.MenuPage-encouragement{
+  font-weight: 600;
+  font-family:cursive;
+  font-size:x-large;
+  padding: 10px 0px 0px 0px;
+
+}
+.AddMenu {
+  display: flex;
+  height: 32px;
+  align-items: stretch;
+  margin-bottom: 24px;
+}
+
+.AddMenu-text {
+
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #453C52;
+  margin-right: 5px;
+  border-radius: 4px;
+  border: 1px solid #BFB8CC;
+}
+
+.AddMenu-button {
+  font-size: 14px;
+  color: white;
+  background-color: #48BB78;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
+.MenuSection {
+  margin-bottom: 30px;
+}
+
+.MenuSectionTitle {
+  display: flex;
+  color: #453C52;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.MenuSectionTitle-text {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 8px;
+  line-height: 1.4px;
+}
+
+.MenuSectionTitle-remainingCount {
+  font-size: 12px;
+}
+
+.MenuItem {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-left: 8px;
+  margin-bottom: 6px;
+  color: #453C52;
+}
+
+.MenuItem-container {
+  display: flex;
+  padding: 2px 8px;
+  align-items: center;
+}
+.MenuItem-price{
+  margin-left: 35px;
+  font-size: smaller;
+  font-weight: 600;
+  color: rgb(165, 77, 77);
+}
+
+.MenuItem-checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.MenuItem-dueDate
+{
+  font-size: 12px;
+  color: rgb(103, 89, 123);
+  margin-left: 8px;
+
+
+}
+
+.MenuItem-delete {
+  width: 16px;
+  visibility: hidden;
+  margin-left: 8px;
+}
+.MenuItem-delete-img {
+  width: 15px;
+  height: 12px;
+  visibility: hidden;
+  margin-left: 1px;
+  margin-right: 164px;
+}
+
+.MenuItem-container:hover {
+  background-color: #F1EDF7;
+  width: 460px;
+
+}
+
+.MenuItem-container:hover .MenuItem-delete {
+  visibility: visible;
+}
+
+.MenuItem-container:hover .MenuItem-delete-img {
+  visibility: visible;
+}

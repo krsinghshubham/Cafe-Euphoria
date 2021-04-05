@@ -1,14 +1,21 @@
 # README
-This application is live on: https://cafe-euphoria.herokuapp.com/
+This project is live on: https://cafe-euphoria.herokuapp.com/
 
-Features: 
-  New user sign up and sign in. 
+Features:
+  New user sign up and sign in.
   User signed in even after page reloads or redirects till he did not get sign-out himself.
   No two users can look up or chagne another user's order.
   Only valid order task.
   All other standard security features have been considered.
+
+  Only Admins are allowed to change menu of cafe and process the orders,
+  TO acheive this functionality users sign with special characters are not allowed and proper error messages will be displayed.
   
-Tech Stack: 
+  ADMIN-CREDENTIALS :
+    Email: admin@cafe-euphoria.com
+    Password: adminpassword
+
+Tech Stack:
   Programming language: Ruby
   Framework: Rails
   Database: Postgres

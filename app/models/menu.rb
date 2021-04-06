@@ -1,4 +1,5 @@
 class Menu < ApplicationRecord
+  belongs_to :user
   def self.is_starter
     all.where(category: "Starter")
   end

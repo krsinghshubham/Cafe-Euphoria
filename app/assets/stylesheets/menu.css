@@ -62,9 +62,8 @@ body {
   margin-right: 8px;
   line-height: 1.4px;
 }
+.toAlign-price{
 
-.MenuSectionTitle-remainingCount {
-  font-size: 12px;
 }
 
 .MenuItem {
@@ -74,32 +73,30 @@ body {
   margin-left: 8px;
   margin-bottom: 6px;
   color: #453C52;
+  justify-content: space-between;
 }
 
 .MenuItem-container {
   display: flex;
   padding: 2px 8px;
   align-items: center;
+  justify-content: space-between;
 }
 .MenuItem-price{
-  margin-left: 35px;
+  margin-left: 20px;
   font-size: smaller;
   font-weight: 600;
   color: rgb(165, 77, 77);
 }
-
+.MenuItem-qunatity{
+  padding: 1px;
+  width: 25px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
 .MenuItem-checkbox {
   width: 16px;
   height: 16px;
-}
-
-.MenuItem-dueDate
-{
-  font-size: 12px;
-  color: rgb(103, 89, 123);
-  margin-left: 8px;
-
-
 }
 
 .MenuItem-delete {
@@ -117,7 +114,7 @@ body {
 
 .MenuItem-container:hover {
   background-color: #F1EDF7;
-  width: 460px;
+
 
 }
 

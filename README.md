@@ -6,18 +6,17 @@ To enter as admin:
     Email: admin@cafe-euphoria.com
     Password: adminpassword
   #! PLEASE DON'T UNNECESSARILY DELETE THE MENU ITEMS (option visible after hovering over the menus)
-To enter as admin:
-  Sing up First. 
+To enter as user:
+  Sing up First.
 
 Features:
   New user sign up and sign in.
   User signed in even after page reloads or redirects till he did not get sign-out himself.
   No two users can look up or chagne another user's order.
-  Only valid order task.
-  All other standard security features have been considered.
-
   Only Admins are allowed to change menu of cafe and process the orders,
-  To acheive this functionality users sign with special characters are not allowed and proper error messages will be displayed.
+    To acheive this functionality users sign with special characters are not allowed and proper error messages will be displayed.
+  Users can see order price in real time.
+  All other standard security features have been considered.
 
 Tech Stack:
   Programming language: Ruby

@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2021_04_06_013613) do
     t.boolean "completed", default: false
     t.string "order_total", default: "0", null: false
     t.bigint "user_id", null: false
+    t.string "menus_selected", default: "\"\""
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 

@@ -4,12 +4,10 @@
     You are on menus page, to manage orders go to, <%= link_to "orders page", admins_path %>
 </h3>
 
-
 <main class="MenuPageMain">
     <article>
         <br></br>
         <%= form_with(url: "/admins", method: "POST", class: "AddMenu") do %>
-
              <select class="AddMenu-text" name="category">
                 <option value="" disabled selected>Cateogry ?</option>
                 <option value="Starter">Starter</option>

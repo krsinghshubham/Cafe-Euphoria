@@ -6,6 +6,7 @@ class MenusController < ApplicationController
   end
 
   def final
+    Order.create(current_user.id)
     Menu.menuReset
     render "final"
   end

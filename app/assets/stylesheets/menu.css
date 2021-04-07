@@ -12,11 +12,19 @@ body {
   line-height: 1.6;
   margin-bottom: 12px;
 }
-.MenuPage-encouragement{
+div.MenuPage-encouragement{
   font-weight: 600;
   font-family:cursive;
   font-size:x-large;
   padding: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.Menu-Total{
+
+}
+.Place-order{
 
 }
 .AddMenu {

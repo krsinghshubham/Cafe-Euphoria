@@ -1,5 +1,4 @@
 class Menu < ApplicationRecord
-  belongs_to :user
   def self.is_starter
     all.where(category: "Starter")
   end
@@ -10,5 +9,9 @@ class Menu < ApplicationRecord
 
   def self.is_beverage
     all.where(category: "Beverages")
+  end
+  def self.menuTotal
+    total = Menu.all.sum('quantity::int*price::int')
+    total
   end
 end

@@ -20,9 +20,6 @@ class AdminsController < ApplicationController
     )
     if new_menu.save
       redirect_to menusEdit_path
-    else
-      flash[:error] = new_todo.errors.full_message.join(", ")
-      redirect_to menusEdit_path
     end
   end
 

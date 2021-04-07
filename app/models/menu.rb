@@ -14,4 +14,8 @@ class Menu < ApplicationRecord
     total = Menu.all.sum('quantity::int*price::int')
     total
   end
+
+  def self.menuReset
+    Menu.update_all :quantity => '0'
+  end
 end

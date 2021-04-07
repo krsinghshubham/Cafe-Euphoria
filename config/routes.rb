@@ -4,8 +4,10 @@ Rails.application.routes.draw do
 
   resources :menus
   resources :admins
+  resources :orders
   get "/menus_page" => "admins#menusEdit", as: :menusEdit
-
+  post "/final_user_page" => "menus#final", as: :menusFinal
+  
 
   get "/signin" => "sessions#new", as: :new_sessions
   post "/signin" => "sessions#create", as: :sessions

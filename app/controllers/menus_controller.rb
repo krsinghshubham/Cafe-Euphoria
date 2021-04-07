@@ -5,6 +5,11 @@ class MenusController < ApplicationController
     render "index"
   end
 
+  def final
+    Menu.menuReset
+    render "final"
+  end
+
   def update
     id = params[:id]
     selected_menu = Menu.find(id)

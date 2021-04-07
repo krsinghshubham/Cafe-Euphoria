@@ -2,7 +2,9 @@
     Here is our euphoric menu !
     <div class="MenuTotalPrice-andButton">
         <p class="Menu-Total">Total: ₹<%=Menu.menuTotal%><p>
-        <p class="Place-order"> Place order <p>
+        <%= form_with(url: "/final_user_page", method: "POST", class: "AddMenu") do %>
+            <input class="AddMenu-button" type="submit" value="Place Order">
+        <% end %>
     </div>
 </div>
 

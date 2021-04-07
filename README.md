@@ -1,6 +1,14 @@
 # README
 This project is live on: https://cafe-euphoria.herokuapp.com/
 
+To enter as admin:
+ ADMIN-CREDENTIALS :
+    Email: admin@cafe-euphoria.com
+    Password: adminpassword
+  #! PLEASE DON'T UNNECESSARILY DELETE THE MENU ITEMS (option visible after hovering over the menus)
+To enter as admin:
+  Sing up First. 
+
 Features:
   New user sign up and sign in.
   User signed in even after page reloads or redirects till he did not get sign-out himself.
@@ -10,10 +18,6 @@ Features:
 
   Only Admins are allowed to change menu of cafe and process the orders,
   To acheive this functionality users sign with special characters are not allowed and proper error messages will be displayed.
-
-  ADMIN-CREDENTIALS :
-    Email: admin@cafe-euphoria.com
-    Password: adminpassword
 
 Tech Stack:
   Programming language: Ruby

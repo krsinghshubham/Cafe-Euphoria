@@ -8,4 +8,4 @@ class Order < ApplicationRecord::Base
   def self.incomplete
     all.where(completed: false)
   end
-end̦ 
+end

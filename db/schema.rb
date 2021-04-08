@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2021_04_06_013613) do
     t.string "category"
     t.string "name"
     t.string "price"
-    t.string "quantity", default: "0"
+    t.integer "quantity"
   end
 
   create_table "orders", force: :cascade do |t|
@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(version: 2021_04_06_013613) do
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "completed", default: false
     t.string "order_total", default: "0", null: false
-    t.bigint "user_id", null: false
     t.string "menus_selected", default: "\"\""
+    t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 

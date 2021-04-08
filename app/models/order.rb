@@ -1,19 +1,20 @@
 class Order < ApplicationRecord
   belongs_to :user
-def create < ApplicationController
-    orderString = " "
-    Menu.where(" quantity".to_i > 0).select(
-      [:name, :quantity]
-    ).each { |record|
-      orderString = orderString + record.name + " " + "quantity: " + record.quantity + "!"
-    }
-    order_total = Menu.menuTotal
-    new_order = Order.new(
-      menus_selected: orderString,
-      order_total: Menu.menuTotal,
-      user_id: current_user.id,
-    )
-    new_order.save!
+
+  def self.create(user_id_fromArgument)
+      orderString = " "
+      Menu.where(" quantity" > 0).select(
+        [:name, :quantity]
+      ).each { |record|
+        orderString = orderString + record.name + " " + "quantity: " + record.quantity.to_s + "! "
+      }
+      order_total = Menu.menuTotal
+      new_order = Order.new(
+        menus_selected: orderString,
+        order_total: Menu.menuTotal,
+        user_id: user_id_fromArgument,
+      )
+      new_order.save!
   end
 
   def self.completed

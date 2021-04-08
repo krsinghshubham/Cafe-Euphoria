@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       session[:current_user_id] = user.id
       if user.first_name == "#admin#"
-        redirect_to admins_path
+        redirect_to orders_path
       else
         redirect_to menus_path
       end

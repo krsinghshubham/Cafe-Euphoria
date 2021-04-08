@@ -1,0 +1,28 @@
+<section class="MenuSection">
+    <ul>
+        <% orders.each do |order| %>
+            <div class=MenuSectionTitle>
+            <%= form_with(url: "/orders/#{order.id}", method: "PUT") do %>
+                <input
+                    class="OrderItem-checkbox"
+                    type="checkbox" name="completed"
+                    <%= order.completed ? "checked" : "" %>
+                    onclick= "this.form.submit()"
+                />
+            <% end %>
+                <p class="MenuSectionTitle-text"><%= order.id%></p>
+                <p class="MenuSectionTitle-text"><%= User.find(order.user_id).first_name %></p>
+                <p class="MenuSectionTitle-text"><%= User.find(order.user_id).email %></p>
+                <p class="MenuSectionTitle-text">Ph. <%= User.find(order.user_id).phone%></p>
+                <p class="orderTotal-button">₹ <%= order.order_total%></p>
+            </div>
+            <li class="MenuItem">
+                <label class="MenuItem-container">
+                    <%=myArray= order.menus_selected.split('!')  %>
+
+
+                </label>
+            </li>
+        <% end %>
+    </ul>
+</section>

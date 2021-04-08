@@ -10,7 +10,7 @@ class Menu < ApplicationRecord
     all.where(category: "Beverages")
   end
   def self.menuTotal
-    total = Menu.all.sum('quantity*price::int')
+    total = Menu.all.sum('quantity::int*price::int')
     total
   end
 

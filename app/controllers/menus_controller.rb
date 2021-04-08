@@ -14,7 +14,7 @@ class MenusController < ApplicationController
   def update
     id = params[:id]
     selected_menu = Menu.find(id)
-    var = selected_menu.quantity::int + 1
+    var = selected_menu.quantity.to_i+ 1
     selected_menu.quantity = var
     selected_menu.save!
     redirect_to menus_path
@@ -23,8 +23,8 @@ class MenusController < ApplicationController
   def destroy
     id = params[:id]
     selected_menu = Menu.find(id)
-    if (selected_menu.quantity::int > 0)
-      var = selected_menu.quantity - 1
+    if (selected_menu.quantity.to_i > 0)
+      var = selected_menu.quantity.to_i - 1
       selected_menu.quantity = var
       selected_menu.save!
     end

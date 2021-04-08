@@ -2,7 +2,6 @@ class Menu < ApplicationRecord
   def self.is_starter
     all.where(category: "Starter")
   end
-
   def self.is_mainCourse
     all.where(category: "Main-course")
   end
@@ -11,7 +10,7 @@ class Menu < ApplicationRecord
     all.where(category: "Beverages")
   end
   def self.menuTotal
-    total = Menu.all.sum('quantity::int*price::int')
+    total = Menu.all.sum('quantity*price::int')
     total
   end
 

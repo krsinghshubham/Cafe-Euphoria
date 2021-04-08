@@ -21,6 +21,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    Menu.menuReset # Menu reset when user sign out before placing order
     session[:current_user_id] = nil
     @current_user = nil
     redirect_to "/"

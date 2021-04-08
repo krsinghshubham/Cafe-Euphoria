@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2021_04_06_013613) do
     t.string "category"
     t.string "name"
     t.string "price"
-    t.integer "quantity"
+    t.integer "quantity", default: 0
   end
 
   create_table "orders", force: :cascade do |t|

@@ -3,7 +3,7 @@ class Order < ApplicationRecord
 
   def self.create(user_id_fromArgument)
       orderString = " "
-      Menu.where("quantity".to_i > 0).select(
+      Menu.where('quantity > 0').select(
         [:name, :quantity]
       ).each { |record|
         orderString = orderString + record.name + " " + "quantity: " + record.quantity.to_s + "! "

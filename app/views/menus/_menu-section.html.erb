@@ -4,14 +4,14 @@
         <p class="MenuSectionTitle-text"><%= section_title %></h2>
     </div>
     <ul >
-        <% menus.each do |menu| %>
+        <% menus.sort.each do |menu| %>
             <li class="MenuItem">
                 <label class="MenuItem-container">
                     <%= menu.name %>
                 </label>
                 <label class="MenuItem-container" >
                     <p class="MenuItem-price">₹</p><%= menu.price %><p>
-                    
+
                     <%= button_to '+', "/menus/#{menu.id}" , method: :put, class: "MenuItem-qunatity" %>
                     <%= menu.quantity %>
                     <%= button_to '-', "/menus/#{menu.id}" , method: :delete, class: "MenuItem-qunatity" %>

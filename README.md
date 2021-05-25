@@ -5,7 +5,7 @@ To enter as admin:
  ADMIN-CREDENTIALS :
     Email: admin@cafe-euphoria.com
     Password: adminpassword
-  #! PLEASE DON'T UNNECESSARILY DELETE THE MENU ITEMS (option visible after hovering over the menus)
+#! PLEASE DON'T UNNECESSARILY DELETE THE MENU ITEMS (option visible after hovering over the menus)
 To enter as user:
   Sing up First.
 

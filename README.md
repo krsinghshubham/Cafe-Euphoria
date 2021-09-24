@@ -1,4 +1,5 @@
 # README
+I made this project for track my learning with Ruby on Rails while doing my internship.
 This project is live on: https://cafe-euphoria.herokuapp.com/
 
 To enter as admin:
